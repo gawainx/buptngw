@@ -27,6 +27,8 @@ func main(){
     var pass string
     var logout bool
     app := cli.NewApp()
+    app.Version = "v1.0-beta"
+    app.Usage = "北邮校园网登录软件"
     app.Flags = []cli.Flag{
         cli.StringFlag{
             Name:       "u",
